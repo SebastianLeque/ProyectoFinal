@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "Piattelli",
+        "category" : "Tinto",
+        "price" : "1550",
+        "imgSrc" : "images/vino1.png"
+    },
+    {
+        "name" : "Huentala",
+        "category" : "Tinto",
+        "price" : "1850",
+        "imgSrc" : "images/vino2.png"
+    },
+    {
+        "name" : "Cosecha Tardia",
+        "category" : "Blanco",
+        "price" : "900.",
+        "imgSrc" : "images/vino3.png"
+    },
+    {
+        "name" : "Ojo de Agua",
+        "category" : "Blanco",
+        "price" : "1200",
+        "imgSrc" : "images/vino4.png"
+    }
+]

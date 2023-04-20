@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Agregar al carrito - Vinoteca</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>  
+
+    <header>
+      <div class = "container">
+        <nav class = "navbar">
+          <a href = "index.html" class = "navbar-brand">VINOTECA</a>
+          <button  class = "navbar-toggler">
+            <a href="http://www.instagram.com/tomevavinos/" target="_blank"><img src="images/vinitologo.png"></a>
+          </button>
+          <div class = "cart">
+            <button type = "button" id = "cart-btn">
+              <i class = "fas fa-shopping-cart"></i>
+              <span id = "cart-count-info"></span>
+            </button>
+            <div class = "cart-container">
+              <div class = "cart-list">
+              </div>
+              <div class = "cart-total">
+                <h3>Total: $</h3>
+                <span id = "cart-total-value"></span>
+                <button class="buy-button-text"><h3 id="buy-button">Comprar</h3></button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class = "products">
+      <div class = "container">
+        <h2>CATALOGO DE VINOS</h2>
+        <div class = "product-list">
+
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
