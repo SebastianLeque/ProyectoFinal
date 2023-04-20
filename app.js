@@ -174,20 +174,9 @@ function deleteProduct(e){
 }
 
 
+
 const botonComprar = document.getElementById("buy-button");
 botonComprar.addEventListener("click", mostrarMensaje);
-
-function mostrarMensaje() {
-    Swal.fire(
-        'Su compra ha sido realizada',
-        'Gracias por confiar en Vinoteca',
-        'success'
-      ) 
-    clearCart
-  }
-
-const botonBorrar = document.getElementById("buy-button");
-botonBorrar.addEventListener("click", clearCart);
 
 function clearCart() {
     cart.innerHTML = "";
@@ -196,4 +185,16 @@ function clearCart() {
     updateCartInfo();
   }  
 
-
+function mostrarMensaje() {
+    let products = getProductFromStorage();
+    if (products.length > 0) {
+        clearCart();
+        Swal.fire(
+            'Su compra ha sido realizada',
+            'Gracias por confiar en Vinoteca',
+            'success'
+          ) ;
+    } else {
+        Swal.fire('Su carrito está vacío');
+    }
+}
